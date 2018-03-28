@@ -2,24 +2,24 @@
   .nav
     li
       if is_home()
-        a.current(href="/")= __('Home')					
+        a.current(href="/")= __('主页')					
       else
-        a(href="/")= __('Home')	
+        a(href="/")= __('主页')	
     li
-      if is_current('about')
-        a.current(href="/about")= __('About')			
+      if is_current('关于')
+        a.current(href="/about")= __('关于')			
       else
-        a(href="/about")= __('About')
+        a(href="/about")= __('关于')
     li
       if is_archive()
-        a.current(href="/archives")= __('Archive')
+        a.current(href="/archives")= __('归档')
       else
-        a(href="/archives")= __('Archive')
+        a(href="/archives")= __('归档')
     li
-      if is_current('links')
-        a.current(href="/links")= __('Links')					
+      if is_current('友情链接')
+        a.current(href="/links")= __('友情链接')					
       else
-        a(href="/links")= __('Links')		
+        a(href="/links")= __('友情链接')		
   .information
     .back_btn
       li
